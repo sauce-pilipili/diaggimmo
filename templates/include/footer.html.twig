@@ -1,0 +1,63 @@
+<div class="footer">
+    <div class="contact">
+
+        <div class="contacteznous">
+            <div class="svg-circle2">
+                <img src="{{ asset('logo/svg/circlelogoblack.svg') }}" alt="">
+            </div>
+            <div class="formulaire">
+                <h4>Contactez-nous !</h4>
+                <p style="font-weight:normal;margin-bottom: 20px;">Vous pouvez aussi nous contacer par mail à l'adresse suivante : <a href="mailto:gooddiagimmo@gmail.com" style="font-weight:bold;">gooddiagimmo@gmail.com</a></p>
+                {{ form_start(form) }}
+                {{ form_row(form.nom) }}
+                <hr><br>
+                {{ form_row(form.telephone) }}
+                <hr><br>
+                {{ form_row(form.email) }}
+                <hr><br>
+                {{ form_row(form.message) }}
+                <hr><br>
+                <input type="submit" name="submit2">
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+    <div class="footer-content">
+        <ul>
+            <li>
+                <h4>GOOD'DIAG IMMO</h4>
+                <p>Nous réalisons tous les diagnostics obligatoires lors de la vente et la location de vos biens. Notre entreprise est familiale, nous sommes à votre écoute afin de vous accompagner et vous conseiller.</p> <br>
+                <p>N° RCS :	Bordeaux B 837 526 763</p>
+                <p>GOOD DIAG IMMO © 2020</p>
+            </li>
+            <li>
+                <div class="link">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="{{ path('main') }}">Accueil</a></li>
+                        <li><a href="{{ path('expert_en_diagnostic_immobilier') }}">A propos</a></li>
+                        <li><a href="{{ path('actualite') }}">Actualités</a></li>
+                        <li><a href="{{ path('mentionslegales') }}">Mentions légales</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="link">
+                    <h4>Les diagnostics</h4>
+                    <ul>
+                        <li><a href="{{ path('diagnostics_immobiliers') }}">Nos diagnostics</a></li>
+                        <li><a href="./contactez-nous">Contact et devis</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="suiveznous">
+                <h4>Suivez-nous</h4>
+                <div class="reseau">
+                    <a href="https://www.facebook.com/GoodDiagImmo" /><img src="{{ asset('logo/svg/facebook.svg') }}" alt=""></a>
+                    <a href="https://www.linkedin.com/company/good'diag-immo/"> <img src="{{ asset('logo/svg/linkedinn.svg') }}" alt=""></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

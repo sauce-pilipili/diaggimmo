@@ -1,0 +1,270 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+    {{ include('include/navigation.html.twig') }}
+
+
+    <div class="intro">
+        <h4>Les diagnostics immobiliers obligatoires</h4>
+        <p>Nous réalisons tous les diagnostics immobiliers obligatoires lors de la vente ou la location de votre bien. Suite à la réalisation de ces divers diagnostics, carrez, diagnostic energétique, nous vous transmettons un rapport complet de nos diagnostic technique.<br><br>Un expert certifié doit réaliser ces diag immo. Nous le garantissons avec notre équipe pro. Nous intervenons dans toutes les villes de la Gironde (Mérignac, Bègles, Bordeaux…)</p>
+    </div>
+
+    <div class="diagnostic-container">
+        <div class="diagdivleft">
+            <div class="leftsvg">
+                <div class="leftsvg-img">
+                    <img src="{{ asset('logo/diagnostic-dpe.png') }}" alt="Diagnostic DPE">
+                </div>
+            </div>
+            <div class="righttext">
+                <h3>DPE - Diagnostic de Performance Énergétique</h3> <br>
+                <p><span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Réalisé obligatoirement par un professionnel certifié pour toute construction close et couverte qui est dotée d’un système de chauffage fixe, le DPE (diagnostic de performance énergétique) permet notamment de rendre publique une offre immobilière (sur internet, dans les presse ou même via une agence). Initié dans un but écologique, il permet aussi de mieux estimer pour celui qui loue ou achète, les potentiels coûts énergétiques.<br><br>
+
+                    <span class="diagnostic-container_bold">Pour quel type de bien ?</span> Tout type de bien avec système de chauffage <br> <br>
+
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente et location <br> <br>
+
+                    <span class="diagnostic-container_bold">Durée de validité</span> : 10 ans  <br> <br>
+
+                    Pour les DPE réalisés avant le 1.01.21 : <br> <br>
+                    - entre le 1er janvier 2013 et le 31 décembre 2017 sont valides jusqu'au 31 décembre 2022 <br> <br>
+                    - entre le 1er janvier 2018 et le 30 juin 2021 sont valides jusqu'au 31 décembre 2024
+                </p> <br>
+            </div>
+        </div>
+        <div class="diagdivright">
+            <div class="lefttext">
+                <h3>Diagnostic CREP - Diagnostic Plomb</h3>
+                <p><span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Dans le cas d’une inhalation ou d’une ingestion de plomb, les conséquences peuvent être terribles pour la santé. Nombreux cas d’intoxications ont été recensés avant que la loi ne vienne confirmer que  toute habitation ancienne mise en vente ou en location soit soumise à contrôle via le diagnostic plomb (CREP). <br>
+                    Avant les années 50, on avait recours massivement à de la peinture à base de plomb ; reconnue nocive depuis. Ainsi, avec ce contrôle, un grand nombre de surfaces sont passées au crible au sein du logement, comme par exemple murs, portes, plinthes, volets, etc. <br> <br>
+                    <span class="diagnostic-container_bold">Pour quel type de bien ?</span> Maison et appartement construit avant 1949 <br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente et location <br> <br>
+                    <span class="diagnostic-container_bold">Durée de validité :</span> <br>
+                    Si positif : 1 an pour une vente - 6 ans pour une location <br>
+                    Si négatif : Illimité dans le temps
+
+
+                </p> <br>
+            </div>
+            <div class="rightsvg">
+                <div class="rightsvg-img">
+                    <img src="{{ asset('logo/diagnostic-plomb.png') }}" alt="Diagnostic Plomb">
+                </div>
+            </div>
+        </div>
+        <div class="diagdivleft2">
+            <div class="leftsvg">
+                <div class="leftsvg-img">
+                    <img src="{{ asset('logo/diagnostic-amiante.png') }}"" alt="Diagnostic Amiante">
+                </div>
+            </div>
+            <div class="righttext">
+                <h3>Diagnostic Amiante</h3> <br>
+                <p><span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Reconnu comme un facteur grave de risque pour la santé, l’amiante a pour vocation d’être éradiqué par les pouvoirs publics au sein de toute construction, privée ou publique. Ses fibres toxiques étant largement présentes encore dans la parc immobilier national, le diagnostic amiante et ses conséquences se sont imposés légalement assez naturellement. <br> <br>
+                    <span class="diagnostic-container_bold">Pour quel type de bien ?</span> Tout type de bien construit avant 1997 <br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente et location <br> <br>
+                    <span class="diagnostic-container_bold">Durée de validité :</span> <br>
+                    Si positif : 3 ans <br>
+                    Si négatif et réalisé après décembre 2012 : Illimité dans le temps <br>
+
+
+                </p> <br>
+            </div>
+        </div>
+        <div class="diagdivright">
+            <div class="lefttext">
+                <h3>Diagnostic Termites</h3>
+                <p><span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Le diagnostic termites est un contrôle obligatoire réalisé par un professionnel certifié. Il est destiné à s’assurer qu’un logement n’est pas infesté par cet insecte ravageur, sur des éléments essentiels du bâti. La présence de termites peut être une catastrophe, pouvant entraîner des travaux plus ou moins importants. Obligatoire et le plus souvent à titre d’information, il n’engage pas forcément à la conduite des travaux par le vendeur. Le but est avant tout pour le futur acquéreur de connaître la situation du bien en termes d'éventuelles infestations de termites puisque cela peut engendrer un certain nombre de coûts de réfection.
+                    <br> <br>
+                    <span class="diagnostic-container_bold">Pour quel type de bien ?</span> Tout type de bien <br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente
+                    <br> <br>
+                    <span class="diagnostic-container_bold">Durée de validité :</span> 6 mois
+                </p><br> <br><br>
+            </div>
+            <div class="rightsvg">
+                <div class="rightsvg-img">
+                    <img src="{{ asset('logo/diagnostic-termite.png') }}" alt="Diagnostic Termites">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="diagdivleft">
+            <div class="leftsvg">
+                <div class="leftsvg-img">
+                    <img src="{{ asset('logo/diagnostic-metrage.png') }}" alt="Diagnostic Métrage">
+                </div>
+            </div>
+            <div class="righttext">
+                <h3>Diagnostic Metrage (loi Carrez & loi Boutin)</h3> <br>
+                <p><span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Son but est de protéger les futurs acquéreurs d’une copropriété. Lors de la vente d’un bien dans le secteur de l’immobilier, qu’il s’agisse d’un bâti au sein d’une copropriété horizontale ou verticale un mesurage loi carrez est nécessaire. Cependant, il faut savoir que certaines surfaces n’entrent pas en compte dans la Loi Carrez, tel que les cages d’escalier, les murs, les cloisons, les garages, les caves ainsi que tout ce qui est à l’extérieur, n’étant ni clos ni couvert, et toute partie du logement au-dessous de 1,80m.<br> <br>
+                    Mentionner la superficie habitable à la signature d'un nouveau bail est désormais obligatoire. Cette obligation concerne toutes les locations vides et meublées à usage de résidence principale. Ne sont donc pas concernées les locations à usage de résidence secondaire et les locations saisonnières.
+                    <br> <br>
+                    La loi Boutin n'oblige pas d'avoir recours à un diagnostiqueur pour calculer votre superficie habitable. Néanmoins, nous vous le recommandons vivement. <br> <br>
+                    <span class="diagnostic-container_bold">Pour quel type de bien ?</span> Bien en copropriété - Tout type de bien pour une mise en location<br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente (loi Carrez) - Location (loi Boutin)<br> <br>
+                    <span class="diagnostic-container_bold">Durée de validité :</span> Document sans date de validité jusqu'à modification de la surface
+                    <br> <br>
+                </p> <br>
+            </div>
+
+        </div>
+        <div class="diagdivright">
+            <div class="lefttext">
+                <h3>Diagnostic Installation Électrique
+                </h3>
+                <p><span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Depuis le 1er janvier 2009 (Loi ALUR), le diagnostic électricité a été rendu indispensable et ainsi obligatoire afin d’identifier tout risque potentiel lié à une éventuelle installation électrique vétuste ou mal mise en œuvre. <br> <br>
+                    Ce diagnostic immobilier porte sur des éléments précis et différents de l’installation électrique : <br> <br></p>
+                <ul class="diagnostic-container_list">
+                    <li>les matériels électriques (dans leur ensemble et à titre individuel),
+                    </li>
+                    <li>l’état des conducteurs, interrupteurs et sectionneurs, fusibles, disjoncteurs,
+                    </li>
+                    <li>toutes les prises de terre et liaisons équipotentielles,
+                    </li>
+                    <li>l’ensemble des classes de matériels électriques,
+                    </li>
+                    <li>tout respect des volumes dans la ou les salles de bain,
+                    </li>
+                </ul> <br>
+                <p><span class="diagnostic-container_bold">Pour quel type de bien ?</span> Maison et appartement avec installation Électrique de plus de 15 ans ou avec installation de - de 15 ans sans CONSUEL (pour les biens rénovés)
+                    <br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente et location
+                    <br> <br>
+                    <span class="diagnostic-container_bold">Durée de validité :</span>
+                    <br>
+                    Vente : 3 ans <br>
+                    Location : 6 ans <br>
+
+
+
+                </p> <br>
+            </div>
+
+            <div class="rightsvg">
+                <div class="rightsvg-img">
+                    <img src="{{ asset('logo/diagnostic-electrique.png') }}" alt="Diagnostic Électrique">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="diagdivleft">
+            <div class="leftsvg">
+                <div class="leftsvg-img">
+                    <img src="{{ asset('logo/diagnostic-gaz.png') }}" alt="Diagnostic Gaz">
+                </div>
+            </div>
+            <div class="righttext">
+                <h3>Diagnostic Installation Gaz</h3> <br>
+                <p><span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Cette norme concerne à la fois tous les systèmes de production d’eau chaude et de système de cuisson pour tout acte de vente ou location. Elle reste avant tout rassurante pour l’acheteur et cruciale pour la sécurité de tous.<br> <br>Outre le dispositif global qui est examiné, sont vérifiés de nombreux points et installations différentes :</p><br>
+                <ul class="diagnostic-container_list">
+                    <li>appareils de cuisson ;
+                    </li>
+                    <li>dispositifs de chauffage ;
+                    </li>
+                    <li>systèmes de production d’eau chaude sanitaire ;
+                    </li>
+                    <li>accessoires et composants (tuyaux en elle-même, étanchéité..)
+                    </li>
+                </ul><br>
+                <p><span class="diagnostic-container_bold">Pour quel type de bien ?</span> Maison et appartement avec installation Gaz de plus de 15 ans ou avec installation de - de 15 ans sans certificat QUALIGAZ (pour les biens rénovés) <br> <br>
+
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente et location
+
+                    <br> <br>
+
+                    <span class="diagnostic-container_bold">Durée de validité :</span>
+                    <br>
+                    Vente : 3 ans
+                    <br>
+                    Location : 6 ans
+                </p> <br>
+            </div>
+
+        </div>
+        <div class="diagdivright">
+            <div class="lefttext">
+                <h3>Diagnostic Assainissement
+                </h3>
+                <p> <span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Communément appelé “tout à l’égout”, l’assainissement collectif se distingue de l’assainissement non collectif par son raccordement à un réseau public et donc plus global d’habitations. L’un ou l’autre mode d’assainissement reste obligatoire à l’achat d’une maison au travers d’un diagnostic dédié et réalisé par un professionnel. <br> <br>
+                    <span class="diagnostic-container_bold">Pour quel type de bien ?</span> Maison et appartement
+                    <br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente
+                    <br> <br>
+                    <span class="diagnostic-container_bold">Durée de validité :</span> 3 ans
+                    <br>
+                    L’obligation ou non de réaliser ce diagnostic est définie par la mairie de votre commune.
+                </p> <br>
+            </div>
+
+            <div class="rightsvg">
+                <div class="rightsvg-img">
+                    <img src="{{ asset('logo/diagnostic-assainissement.png') }}" alt="Diagnostic Assainissement">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="diagdivleft">
+            <div class="leftsvg">
+                <div class="leftsvg-img">
+                    <img src="{{ asset('logo/diagnostic-peb.png') }}" alt="Diagnostic PEB">
+                </div>
+            </div>
+            <div class="righttext">
+                <h3>Diagnostics PEB
+                </h3> <br>
+                <p><span class="diagnostic-container_bold">Qu’est ce que c’est ?</span> Depuis le 1er juin 2020, il est obligatoire de vérifier si le bien est situé dans l’une des zones de bruit définies par un Plan d’Exposition au Bruit (PEB).  Ce document doit être intégrer au dossier de diagnostic technique lors d’une vente ou d’une location.<br>Le PEB est défini en fonction de la zone géographique exposée au bruit. Il est annexé au plan local d’urbanisme (PLU), aisni qu’aux cartes cadastrales, aux plans de sauvegarde et de mise en valeur des communes (PSMV).<br> <br>
+                    <span class="diagnostic-container_bold">Pour quel type de bien ?</span> Tout type de bien <br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente et location <br> <br>
+                    <span class="diagnostic-container_bold">Durée de validité :</span> 6 mois <br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction :</span> Vente et location
+                </p> <br>
+            </div>
+
+        </div>
+        <div class="diagdivright">
+            <div class="lefttext">
+                <h3>Diagnostics ERP
+                </h3>
+                <p> <span class="diagnostic-container_bold">Qu’est ce que c’est :</span> Ce diagnostic immobilier permet de faire état des risques et pollution (ERP) d’un bien (essentiel pour une transaction immobilière). <br>Les informations sont obtenues via le site gouvernemental georisques.gouv.fr et retranscrites sur un document CERFA.
+                    <br> <br>
+                    <span class="diagnostic-container_bold">Pour quel type de bien ?</span> Tout type de bien
+                    <br> <br>
+                    <span class="diagnostic-container_bold">Pour quelle transaction ?</span> Vente et location <br> <br>
+                    <span class="diagnostic-container_bold">Durée de validité :</span> 6 mois</p> <br>
+            </div>
+
+            <div class="rightsvg">
+                <div class="rightsvg-img">
+                    <img src="{{ asset('logo/diagnostic-erp.png') }}" alt="Diagnostic ERP">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="devisgratuit">
+        <div class="intro-devis">
+            <h4>Votre devis gratuit</h4>
+            <p>Vous devez vendre ou louer votre maison, appartement, local professionnel ? Vous pouvez faire votre demande de devis directement sur le site, en fonction de vos besoins, nous vous proposerons un devis personnalisé !</p> <br><br> <br>
+            <a href="./contactez-nous" class="button-1">Votre devis gratuit</a>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+{{ include('include/trust.html.twig') }}
+    {{ include('include/footer.html.twig') }}
+
+{% endblock %}

@@ -1,0 +1,270 @@
+.footer-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 400px;
+  position: relative;
+}
+
+.footer-content h4 {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #FFF;
+}
+
+.footer-content ul {
+  display: flex;
+  margin: 0 auto;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.footer-content ul li {
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-content p {
+  font-size: 0.8rem;
+  color: #FFF;
+}
+.footer-content a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.link ul {
+  display: block;
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.link ul li {
+  margin: 0 auto;
+}
+
+.link h4 {
+  width: 100%;
+}
+
+.link {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.link h4 {
+  margin: 0 auto 30px auto;
+  width: 50%;
+}
+
+.footer-content ul li {
+  margin: 0 auto;
+}
+
+.reseau img {
+  width: 50px;
+  margin-left: 20px;
+}
+
+/*  */
+
+.footer {
+  position: relative;
+}
+
+.contact {
+  width: 35%;
+  background: #d1dee7;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  /*top: -350%;*/
+  top: -400%;
+  border-radius: 6px;
+}
+
+.suiveznous {
+  margin: 0 auto;
+  width: 20% !important;
+}
+
+/*  */
+
+.contacteznous {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.contacteznous h4 {
+  font-family: "Merriweather", serif;
+  font-size: 2.2rem;
+  color: #314261;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.formulaire {
+  margin: 0 auto;
+  line-height: 30px;
+  width: 70%;
+}
+
+.contacteznous form input {
+  background: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.contacteznous input[type="submit"] {
+  background: #f0a12a;
+  border-radius: 6px;
+  padding: 15px 35px;
+  border: none;
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 3px solid #f0a12a;
+}
+
+.contacteznous input[type="submit"]:hover {
+  background: transparent;
+  color: #f0a12a;
+  border: 3px solid #f0a12a;
+}
+
+.svg-circle2 {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 8000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 8000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 8000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.svg-circle2 svg {
+  color: black;
+}
+
+.message {
+  max-height: 100px;
+  max-width: 100%;
+  background: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.message:focus-visible {
+  outline: none;
+}
+
+.svg-circle2 img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  overflow: auto;
+}
+.svg-circle2 {
+  top: -50px;
+  right: -50px;
+}
+@media screen and (max-width: 1485px) {
+  .contact {
+    width: 65%;
+    top: -700px;
+  }
+  .contact .footer-content {
+    width: 80%;
+  }
+  .footer-content ul {
+    gap: 20px;
+  }
+  .svg-circle2 {
+    top: -50px;
+    right: -50px;
+  }
+  .svg-circle2 img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    overflow: auto;
+  }
+  .contacteznous h4 {
+    font-family: "Merriweather", serif;
+    font-size: 1.8rem;
+    color: #314261;
+    margin-bottom: 70px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .formulaire h4 {
+    font-size: 1.5rem;
+  }
+  .footer-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .footer-content h4 {
+    font-size: 1rem;
+  }
+  .footer-content ul {
+    gap: 10px;
+  }
+  .footer-content ul {
+    display: block;
+    margin: 0 auto;
+  }
+  .contact {
+    width: 90%;
+  }
+  .footer-content ul li {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .link ul li {
+    margin: 0;
+  }
+  .reseau img {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .svg-circle2 {
+    display: none;
+  }
+  .link h4 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .suiveznous {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contacteznous form input {
+    font-size: 1rem;
+  }
+}

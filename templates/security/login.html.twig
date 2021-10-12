@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% block title %}Log in!{% endblock %}
+{% block body %}
+<form method="post">
+    <div class="espace">
+        <img id="bgadmin" src="{{ asset('logo/LogoGoodDiagImmo.png') }}" alt="">
+        <div class="connexion">
+            <h2>Connectez-vous!</h2> <br>
+            {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+
+            {% if app.user %}
+                <div class="mb-3">
+                    Vous êtes connecté en tant que {{ app.user.username }}, <a href="{{ path('app_logout') }}">Se deconnecter</a>
+                </div>
+            {% endif %}
+            <label for="inputEmail">Email</label>
+            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+            <label for="inputPassword">Mot de passe</label>
+            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+            <button class="button-1" type="submit">Connectez-vous!</button>
+        </div>
+    </div>
+</form>
+{% endblock %}
+{% block javascripts %}
+    <link rel="stylesheet" href="{{ asset('css/admin-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin-navigation.css') }}">
+{% endblock %}

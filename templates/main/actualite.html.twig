@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+{{ include('include/navigation.html.twig') }}
+
+    <div class="intro">
+        <h4>Nos actualités</h4>
+    </div>
+
+    <div class="actu-grid">
+        {% for a in articles %}
+            <div class="ficheactu">
+                <div class="top">
+                    <img src="{{ asset('/uploads/'~a.image.name) }}">
+                </div>
+                <div class="bottom">
+                    <h3>{{ a.title }}</h3>
+                    <br>
+                    <a id="nextread" href="{{ path('articles_show',{slug: a.slug}) }}">Lire la suite ></a> <br> <br>
+                    <p>Publié le {{ a.createdDate |date('y-m-d') }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    </div>
+    <div class="devisgratuit">
+        <div class="intro-devis">
+            <h4>Votre devis gratuit</h4>
+            <p>Vous devez vendre ou louer votre maison, appartement, local professionnel ? Vous pouvez faire votre demande de devis directement sur le site, en fonction de vos besoins, nous vous proposerons un devis personnalisé !</p> <br><br> <br>
+            <a href="{{ path('contactez_nous') }}" class="button-1">Votre devis gratuit</a>
+        </div>
+    </div>
+    {{ include('include/trust.html.twig') }}
+    {{ include('include/footer.html.twig') }}
+{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% endblock %}

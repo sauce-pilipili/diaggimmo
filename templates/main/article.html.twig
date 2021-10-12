@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hello MainController!{% endblock %}
+{% block body %}
+    {{ include('include/navigation.html.twig') }}
+    <div class="articleget">
+        <input type="hidden" name="id" value="<?php echo $id ?>">
+        <h1>{{ article.title }}</h1>
+        <img src="{{ asset('/uploads/'~article.image.name) }}" alt="{{ article.title }}">
+        <p>{{ article.contenu |raw }}</p>
+        <p>Publié le: {{ article.createdDate|date('m-d-Y') }}</p>
+
+    </div>
+    {{ include('include/trust.html.twig') }}
+    {{ include('include/footer.html.twig') }}
+{% endblock %}

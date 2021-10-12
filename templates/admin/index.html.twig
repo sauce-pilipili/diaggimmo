@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Espace privé{% endblock %}
+
+{% block body %}
+    {{ include('include/adminNavigation.html.twig') }}
+    <div class="intro">
+        <h4>Espace d'administration</h4>
+        <br>
+        <p>Bienvenue dans votre espace privé</p>
+
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://cdn.tiny.cloud/1/s00r6l2c5ltbza3mmesoaujzjfgib23jv1u79bhqquwawfgb/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+{% endblock %}
+{% block stylesheets %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/admin-style.css') }}">
+{% endblock %}

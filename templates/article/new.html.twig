@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Article{% endblock %}
+
+{% block body %}
+    {{ include('include/adminNavigation.html.twig') }}
+    <div class="intro">
+        <h4>Espace d'administration</h4>
+        <p>Ajouter un article</p>
+    </div>
+
+    <div class="container1">
+        {{ include('article/_form.html.twig') }}
+{#        <form id="addcontainer" action="./php/traitement/t-add" method="POST" enctype="multipart/form-data" id="tableau">#}
+{#            <div class="div">#}
+{#                <input class="low" type="text" maxlength="30" placeholder="Titre" name="title"> <br>#}
+{#                <textarea id="mytextarea" name="texte" type="hidden"></textarea>#}
+{#                <input class="date" type="date" placeholder="Date" name="date"> <br>#}
+{#                <input class="select" type="file" placeholder="Image" name="picture" accept="image/png, image/jpg, image/jpeg"> <br>#}
+{#                <button type=" submit" class="button-1">Envoyer</button>#}
+{#                <a class="button-1" href="javascript:history.back()">Retour page précédente</a> <br>#}
+{#            </div>#}
+
+{#        </form>#}
+
+    </div> <br><br><br>
+
+
+
+
+    <a href="{{ path('article_index') }}">back to list</a>
+{% endblock %}
+{% block javascripts %}
+    <script src="https://cdn.tiny.cloud/1/s00r6l2c5ltbza3mmesoaujzjfgib23jv1u79bhqquwawfgb/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+{% endblock %}
+{% block stylesheets %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('css/admin-style.css') }}">
+
+
+{% endblock %}

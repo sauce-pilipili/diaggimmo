@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+{{ include('include/navigation.html.twig') }}
+
+    <div class="confirmintro">
+        <h4>Nous avons bien reçu votre demande de devis gratuit !</h4>
+        <p>Nous allons traiter votre demande dans les plus brefs délais.</p> <br> <br>
+        <a href="{{ path('main') }}" class="button-1">Aller sur la page d'accueil</a> <br> <br> <br> <br>
+        <a href="{{ path('actualite') }}" class="button-2">Voir nos actualités</a>
+    </div>
+
+
+
+
+    {{ include('include/trust.html.twig') }}
+    {{ include('include/footer.html.twig') }}
+{% endblock %}

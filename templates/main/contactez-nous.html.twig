@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+    {{ include('include/navigation.html.twig') }}
+
+    <div class="intro">
+        <h4>Votre devis gratuit</h4>
+        <p>Vous pouvez faire une demande de devis gratuite, suite à la réception de celle-ci nous vous répondrons dans
+            les plus brefs délais.</p>
+        <p style="font-weight:normal;">Vous pouvez aussi nous contacer par mail à l'adresse suivante : <a
+                    href="mailto:gooddiagimmo@gmail.com" style="font-weight:bold;">gooddiagimmo@gmail.com</a></p>
+    </div>
+
+    <div class="container9">
+        {{ form_start(formdevis) }}
+        <div class="caracteristique">
+            <h5>Les caractéristiques du bien</h5> <br>
+            <p>Type de transaction</p>
+            {{ form_row(formdevis.venteouloc) }}
+            <br>
+            <p>Type de bien</p>
+            {{ form_row(formdevis.typeDeBien) }}
+            <br>
+            <p>Année de construction</p>
+            {{ form_row(formdevis.anneeconstruction) }}
+
+            <br>
+            <p>Supérficie</p>
+            <div class="superficie">
+                {{ form_row(formdevis.superficie) }}<span>m²</span>
+            </div>
+        </div>
+        <div class="coordonnees">
+            <h5>Vos coordonnées</h5>
+            {{ form_row(formdevis.nom) }}
+            <hr>
+            <br>
+            {{ form_row(formdevis.telephone) }}
+            <hr>
+            <br>
+            {{ form_row(formdevis.email) }}
+            <hr>
+            <br>
+            <div class="villepostale">
+                <div class="city">
+                    {{ form_row(formdevis.ville) }}
+                    <hr>
+                </div>
+                <div class="postal">
+                    {{ form_row(formdevis.codepostal) }}
+                    <hr>
+                </div>
+            </div>
+            <br>
+            <div class="postal">
+                {{ form_row(formdevis.message) }}
+            </div>
+            <hr>
+            <br>
+            <button type="submit" name="submitdevis" id="formsend" class="button-1">Envoyer</button>
+        </div>
+        {{ form_end(formdevis) }}
+    </div>
+
+
+
+
+
+
+
+    {{ include('include/trust.html.twig') }}
+    {{ include('include/footer.html.twig') }}
+{% endblock %}

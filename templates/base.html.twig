@@ -2,9 +2,35 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Good Diag Immo - Votre entreprise de diagnostic immobilier à Bordeaux</title>
+        <meta name="description" content="Good Diag Immo, votre entreprise du diag immo à Bordeaux. Notre équipe d'experts vous accompagne dans la vente et la location.">
+        <meta property="og:url"                content="https://gooddiagimmo.fr/" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="Good Diag Immo - Votre entreprise de diagnostic immobilier à Bordeaux" />
+        <meta property="og:description"        content="Good Diag Immo, votre entreprise du diag immo à Bordeaux. Notre équipe d'experts vous accompagne dans la vente et la location." />
+        <meta property="og:image"              content="https://gooddiagimmo.fr/assets/img/banniere-facebook.jpg" />
+        <link rel="icon" type="image/png" href="{{ asset('logo/favicon.png') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/navigation.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130558633-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-130558633-1');
+        </script>
         {% block stylesheets %}
             {#{{ encore_entry_link_tags('app') }}#}
         {% endblock %}
@@ -15,5 +41,30 @@
     </head>
     <body>
         {% block body %}{% endblock %}
+        <script src="{{ asset('js/function.js') }}"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="{{ asset('js/carousel.js') }}"></script>
+
+        <!-- Cookie Consent by https://www.CookieConsent.com -->
+        <script type="text/javascript" src="//www.cookieconsent.com/releases/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+        <script type="text/javascript" charset="UTF-8">
+            document.addEventListener('DOMContentLoaded', function () {
+                cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"fr","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"website_name":"Good Diag Immo"});
+            });
+        </script>
+
+        <!-- GDI -->
+        <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-130558633-1"></script>
+        <script type="text/plain" cookie-consent="tracking">
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-130558633-1');
+    </script>
+        <!-- end of GDI-->
+
+        <noscript>ePrivacy and GPDR Cookie Consent by <a href="https://www.CookieConsent.com/" rel="nofollow noopener">Cookie Consent</a></noscript>
+        <!-- End Cookie Consent by https://www.CookieConsent.com -->
     </body>
 </html>
