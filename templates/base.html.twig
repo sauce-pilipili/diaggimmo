@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Good Diag Immo - Votre entreprise de diagnostic immobilier à Bordeaux</title>
+        <title>Good Diag Immo - {% block title %}Votre entreprise de diagnostic immobilier à Bordeaux{% endblock %}</title>
+        {% block meta %}
         <meta name="description" content="Good Diag Immo, votre entreprise du diag immo à Bordeaux. Notre équipe d'experts vous accompagne dans la vente et la location.">
+        {% endblock %}
         <meta property="og:url"                content="https://gooddiagimmo.fr/" />
         <meta property="og:type"               content="website" />
         <meta property="og:title"              content="Good Diag Immo - Votre entreprise de diagnostic immobilier à Bordeaux" />

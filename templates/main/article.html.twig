@@ -1,5 +1,8 @@
 {% extends 'base.html.twig' %}
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}{{ article.title }}{% endblock %}
+{% block meta %}
+    <meta name="description" content="{{ article.metaDescription }}">
+{% endblock %}
 {% block body %}
     {{ include('include/navigation.html.twig') }}
     <div class="articleget">

@@ -25,7 +25,9 @@ class MainController extends AbstractController
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $this->sendMail($form, $mailer);
+
             return $this->redirectToRoute('confirm2');
+
         }
         $articles = $articleRepository->findAllWithJoin();
         return $this->render('main/index.html.twig', [
@@ -94,7 +96,7 @@ class MainController extends AbstractController
 
             $email = (new Email())
                 ->from($mailContact)
-                ->to('moishadow@gmail.com')
+                ->to('gooddiagimmo@gmail.com')
                 ->priority(Email::PRIORITY_HIGH)
                 ->subject('Une nouvelle demande de devis pour GoodDiagImmo')
                 ->text('vente ou location: ' . $venteOuLoc .','. "\n".
@@ -221,11 +223,12 @@ class MainController extends AbstractController
 
         $email = (new Email())
             ->from($mailContact)
-            ->to('moishadow@gmail.com')
+            ->to('gooddiagimmo@gmail.com')
             ->priority(Email::PRIORITY_HIGH)
             ->subject('Un nouveau contact GoodDiagImmo')
             ->text('Mr ou mme ' . $nom . ' a un message pour vous: ' . $message . ' contact: ' . $tel);
         $mailer->send($email);
+
 
     }
 }

@@ -17,7 +17,7 @@
                 </div>
                 <div class="bottom">
                     <h3>{{ a.title }}</h3>
-                    <br>
+                    <p>{{ a.description }}</p>
                     <a id="nextread" href="{{ path('articles_show',{slug: a.slug}) }}">Lire la suite ></a> <br> <br>
                     <p>Publié le {{ a.createdDate |date('y-m-d') }}</p>
                 </div>
