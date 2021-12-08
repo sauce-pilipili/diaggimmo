@@ -1,9 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}Good Diag Immo - Confirmation de votre demande de contact{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="Nous avons bien reçu votre demande ! Nous mettons tout en oeuvre pour vous répondre dans les meilleurs délais.">
+{% endblock %}
 
 {% block body %}
-{{ include('include/navigation.html.twig') }}
+    {{ include('include/navigation.html.twig') }}
 
     <div class="confirmintro">
         <h1>Nous avons bien reçu votre message !</h1>

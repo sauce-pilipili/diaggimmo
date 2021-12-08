@@ -1,9 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}Good Diag Immo - Les mentions légales{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="L'affichage des mentions légales est une obligation légale apportant aux utilisateurs une certaine transparence et à les rassurer sur l'identité de celui qui émet les informations.">
+{% endblock %}
 
 {% block body %}
     {{ include('include/navigation.html.twig') }}
+
     <div class="confirmintro">
         <h1>Mentions légales</h1>
         <p>D’après la loi n°2004-575 du 21 juin 2004, les mentions légales doivent apparaitre sur un site internet afin de donner des informations sur l’entreprise et sur l’utilisation des données.</p>

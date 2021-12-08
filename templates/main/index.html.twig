@@ -1,9 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}Good Diag Immo - Votre entreprise de diagnostic immobilier à Bordeaux{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="Good Diag Immo, votre entreprise du diag immo à Bordeaux. Notre équipe d'experts vous accompagne dans la vente et la location.">
+{% endblock %}
 
 {% block body %}
-{{ include('include/navigation.html.twig') }}
+    {{ include('include/navigation.html.twig') }}
+
 <div class="container1">
     <div class="intro-index">
         <h1>Votre entreprise de diagnostics immobiliers</h1>

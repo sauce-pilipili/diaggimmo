@@ -1,9 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}Good Diag Immo - Les actualités du diagnostic immobilier{% endblock %}
+
+{% block meta %}
+    <meta name="description" content="Nous vous tenons informé de toutes les nouveautés et actualités du diagnostic immobilier. Nous publions régulièrement des articles sur divers sujets, liès à l'immobilier.">
+{% endblock %}
 
 {% block body %}
-{{ include('include/navigation.html.twig') }}
+    {{ include('include/navigation.html.twig') }}
 
     <div class="intro">
         <h1>Nos actualités</h1>
